@@ -1,0 +1,30 @@
+name: Code Check
+
+on:
+  pull_request:
+    branches: [main, master] # or the default branch you're using
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # change if you're using a different version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Linter
+        run: npm run lint # or `eslint .` if not using a script
+
+      - name: Run Type Check
+        run: npm run type-check # ensure you have this in your package.json
+
+      - name: Run Build
+        run: npm run build # optional, but good to catch compile-time issues
