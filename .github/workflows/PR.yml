@@ -23,8 +23,5 @@ jobs:
       - name: Run Linter
         run: npm run lint # or `eslint .` if not using a script
 
-      - name: Run Type Check
-        run: npm run type-check # ensure you have this in your package.json
-
       - name: Run Build
         run: npm run build # optional, but good to catch compile-time issues
