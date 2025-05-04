@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Poppins, Orbitron, Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
-export const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
-export const orbitron = Orbitron({ subsets: ["latin"], weight: ["700"] });
-export const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["500", "700"],
-});
-export const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500"] });
+import { poppins } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "0xLabs | Building the Future of Web3 and AI",

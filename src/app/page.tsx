@@ -10,10 +10,10 @@ export default function Page() {
       <div className="relative h-[90vh]">
         {/* Headline Text */}
         <div className="absolute bottom-20 left-15 flex flex-col gap-10 z-10">
-          <p className="lg:text-5xl font-bold text-amber-50">
+          <p className="lg:text-5xl md:text-4xl sm:text-2xl font-bold text-amber-50">
             Building the Future of Web3 and AI
           </p>
-          <p className="lg:text-5xl font-bold text-white">
+          <p className="lg:text-5xl md:text-4xl sm:text-2xl font-bold text-white">
             One Product at a Time
           </p>
         </div>
