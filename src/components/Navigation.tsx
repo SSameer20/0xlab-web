@@ -1,4 +1,4 @@
-import { orbitron, poppins } from "@/app/layout";
+import { orbitron, poppins } from "@/utils/fonts";
 
 export default function Navigation() {
   return (
