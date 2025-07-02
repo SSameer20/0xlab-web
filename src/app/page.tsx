@@ -1,10 +1,8 @@
 import About from "@/components/About";
-import Navigation from "@/components/Navigation";
 
 export default function Page() {
   return (
     <div className="w-full">
-      <Navigation />
       {/* Hero Section */}
 
       <div className="relative h-[90vh]">
@@ -32,6 +30,7 @@ export default function Page() {
 
       {/* About Us */}
       <About />
+      {/* Footer */}
     </div>
   );
 }
