@@ -23,16 +23,16 @@ export const metadata: Metadata = {
     "0xLabs Web3 AI",
   ],
   authors: [{ name: "0xLabs Team" }],
-  creator: "0xLabs",
+  creator: "0xLabsOrg",
   openGraph: {
     title: "0xLabs | Building the Future of Web3 and AI",
     description:
       "Explore innovative products by 0xLabs—where Blockchain meets AI. Build with us.",
-    url: "https://0xlabs.org", // change to actual domain
-    siteName: "0xLabs",
+    url: "/logo.png",
+    siteName: "0xLabsOrg",
     images: [
       {
-        url: "https://0xlabs.org/og-image.png", // customize your OG image
+        url: "/logo.png", // customize your OG image
         width: 1200,
         height: 630,
         alt: "0xLabs Web3 AI Banner",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "0xLabs | Building the Future of Web3 and AI",
     description:
       "We create next-gen Blockchain and AI products. Join our builder community.",
-    images: ["https://0xlabs.org/twitter-card.png"],
+    images: ["/logo.png"],
   },
 };
 
@@ -58,6 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+      </head>
       <body
         className={`${poppins.className} antialiased h-screen w-screen overflow-x-hidden`}
       >
