@@ -3,12 +3,15 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="relative w-screen min-h-screen flex flex-col justify-center items-center gap-10 px-4 sm:px-8 md:px-16 py-10">
+    <section
+      id="about"
+      className="relative w-screen h-screen flex flex-col justify-center items-center gap-10 px-4 sm:px-8 md:px-16 py-10"
+    >
       <motion.p
         initial={{ y: -200 }}
         whileInView={{ y: -150 }}
         transition={{ duration: 1 }}
-        className="absolute text-[60px] sm:text-[80px] md:text-[120px] lg:text-[200px] -rotate-90 lg:-left-10 lg:top-1/2 sm:left-2 sm:top-0 left-1 top-0 opacity-20 font-bold"
+        className="absolute text-[60px] sm:text-[80px] md:text-[120px] lg:text-[200px] -rotate-90 lg:-left-10 lg:top-1/3 sm:left-2 sm:top-0 left-1 top-0 opacity-20 font-bold"
       >
         ABOUT
       </motion.p>
@@ -41,6 +44,6 @@ export default function About() {
           love.
         </p>
       </motion.div>
-    </div>
+    </section>
   );
 }

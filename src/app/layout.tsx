@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from "@/utils/fonts";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "0xLabs | Building the Future of Web3 and AI",
+  title: "0xLabs-Org | Building the Future of Web3 and AI",
   description:
-    "0xLabs is a micro-startup studio focused on creating smart, secure, and scalable digital tools using Blockchain and AI. Join us in building powerful dApps, AI SaaS, DeFi products, and more.",
+    "0xLabs-Org is a micro-startup studio focused on creating smart, secure, and scalable digital tools using Blockchain and AI. Join us in building powerful dApps, AI SaaS, DeFi products, and more.",
   keywords: [
     "0xLabs",
     "Web3",
@@ -59,7 +61,9 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased h-screen w-screen overflow-x-hidden`}
       >
+        <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
